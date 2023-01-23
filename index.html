@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Website</title>
+        <title>Book Recommendation</title>
+        <link rel="stylesheet" href="index.css">
+        <script src="index.js"></script>
     </head>
     <body>
-        <h1>Aditi's Website</h1>
-        <p>This is a paragraph</p>
+        <h1>Book reccomendation</h1>
+        <div>
+            <p>This contains a list of book reccomendations. Feel free to add yours by filling out the form below</p>
+            <form id="form">
+                <fieldset>
+                    <label for="bookName">Book Name:</label><br>
+                    <input type="text" id="bookName" name="bookName" required><br>
+                    <label for="image">Image link:</label><br>
+                    <input type="text" id="image" name="image"><br>
+                    <label for="weblink">Link to Wikipage:</label><br>
+                    <input type="text" id="weblink" name="weblink" required><br>
+                    <label for="description">Description:</label><br>
+                    <textarea id="description" name="description" rows="4" cols="50" required></textarea><br>
+                    <button id="button" type="button">Submit</button><br>
+                </fieldset>
+            </form>
+            <br>
+            <table id="bookTable">
+                <tr>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>Link</th>
+                    <th>Description</th>
+                    
+                </tr>
+                <tr>
+                    <td>Harry Potter and the Prisoner of Azkaban</td>
+                    <td><img src="https://live.staticflickr.com/65535/49848229278_0d0dae454e_b.jpg" alt="Book Cover"></td>
+                    <td><a href="https://en.wikipedia.org/wiki/Harry_Potter_and_the_Prisoner_of_Azkaban">Wiki Link</a></td>
+                    <td>Harry's year 3 in Hogwarts</td>
+                </tr>
+            </table>
+        </div>
     </body>
 </html>
